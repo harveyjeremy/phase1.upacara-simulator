@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upacara Simulator — Stargaze Interactives</title>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+
+  <div id="menu" class="screen">
+    <div class="menu-card">
+      <p class="studio">STARGAZE INTERACTIVES</p>
+      <p class="presents">Presents</p>
+      <h1>UPACARA SIMULATOR</h1>
+      <p class="creator">Created by Harvey Jeremy</p>
+      <label for="username">Display name</label>
+      <input id="username" maxlength="20" autocomplete="off" placeholder="3–20 characters" />
+      <p id="username-error" class="error" role="alert"></p>
+      <button id="play">Play</button>
+      <p id="conn-status" class="status">Connection: offline (Phase 1 — multiplayer arrives in Phase 2)</p>
+      <p class="credit">Independent browser-based multiplayer game.</p>
+    </div>
+  </div>
+
+  <div id="hud" class="hidden">
+    <div class="hud-top"><span id="hud-name"></span><span id="hud-players">Players: 1</span><span>Status: Free Roam</span><button id="open-settings">Settings</button></div>
+    <div class="hud-controls">WASD move · Mouse look · Wheel zoom · Shift run · Esc menu</div>
+    <div id="click-hint">Click the screen to capture the mouse</div>
+  </div>
+
+  <div id="settings" class="screen hidden">
+    <div class="menu-card">
+      <h2>Settings</h2>
+      <label for="gfx">Graphics quality</label>
+      <select id="gfx"><option value="low">Low</option><option value="medium" selected>Medium</option></select>
+      <label for="sens">Mouse sensitivity</label>
+      <input id="sens" type="range" min="0.3" max="2" step="0.1" value="1" />
+      <button id="resume">Return to game</button>
+      <button id="disconnect" class="secondary">Disconnect / title screen</button>
+      <p class="credit">Developed by Stargaze Interactives<br/>Created by Harvey Jeremy</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

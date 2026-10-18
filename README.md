@@ -7,11 +7,7 @@ Created by **Harvey Jeremy**
 
 ## Preview
 
-Want to try the game? You can access the temporary preview here:
-
-**https://harveyjeremy.github.io/phase1.upacara-simulator**
-
-> Note: This is a temporary preview of Phase 1. Features and gameplay may change as development continues.
+A live preview is not available yet. The game can currently be run locally by downloading the project ZIP archive, extracting it, and following the installation instructions below.
 
 ## About the Project
 
@@ -21,16 +17,68 @@ The goal is to create an interactive virtual environment where players can explo
 
 This repository contains **Phase 1** of development, focusing on the initial 3D prototype.
 
+## Download and Installation
+
+The project source code is provided as a ZIP archive.
+
+### 1. Download the Project
+
+1. Open this repository on GitHub.
+2. Download the ZIP archive containing the project files.
+3. Extract the ZIP archive to a folder on your computer.
+
+Make sure you extract the archive before continuing.
+
+### 2. Install the Requirements
+
+Install the following software if you have not already:
+
+- [Node.js](https://nodejs.org/) — LTS version recommended
+- npm — included with Node.js
+
+### 3. Open the Project Folder
+
+Open the extracted project folder. Make sure it contains `package.json` and the `src` folder.
+
+Open a terminal in that folder.
+
+On Windows, you can open the folder in File Explorer, click the address bar, type `cmd`, and press Enter.
+
+### 4. Install Dependencies
+
+Run:
+
+```bash
+npm install
+```
+
+Wait for the installation to finish.
+
+### 5. Start the Development Server
+
+Run:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal, usually:
+
+`http://localhost:5173`
+
+The game should now open in your browser.
+
+To stop the development server, press `Ctrl + C` in the terminal.
+
 ## Current Features
 
-- Browser-based 3D environment
-- 3D rendering powered by Three.js
-- Lightweight, low-poly visual style
-- Basic player movement and camera controls
-- Initial school environment
-- Project branding by Stargaze Interactives
+The following list should reflect the features implemented in the current Phase 1 build:
 
-*Update this list to match the features actually implemented in Phase 1.*
+- Browser-based 3D game prototype
+- Three.js rendering
+- Lightweight, low-poly visual style
+- Initial school environment
+- Basic player movement and camera controls
 
 ## Planned Features
 
@@ -40,7 +88,7 @@ This repository contains **Phase 1** of development, focusing on the initial 3D 
 - School flag ceremony sequence
 - Ceremony roles and role assignment
 - Session-based usernames without permanent player profiles
-- Deployment of the multiplayer version
+- Online multiplayer deployment
 
 ## Technology Stack
 
@@ -50,37 +98,9 @@ This repository contains **Phase 1** of development, focusing on the initial 3D 
 - **HTML & CSS** — Interface and styling
 - **Node.js, Express & Socket.IO** — Planned multiplayer backend
 
-## Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (LTS recommended)
-- npm
-- Git
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/harveyjhs/phase1.upacara-simulator.git
-cd phase1.upacara-simulator
-```
-
-Install dependencies and start the development server using the commands appropriate for the project structure.
-
-For a typical Vite project:
-
-```bash
-npm install
-npm run dev
-```
-
-Open the local URL displayed in your terminal, usually `http://localhost:5173`.
-
 ## Development Roadmap
 
-- **Phase 1 — 3D Prototype:** Establish the initial environment, rendering, and player controls.
+- **Phase 1 — 3D Prototype:** Build the initial environment, rendering, and player controls.
 - **Phase 2 — Multiplayer:** Implement real-time connections and player synchronization.
 - **Phase 3 — Ceremony Gameplay:** Add ceremony stages, roles, and host controls.
 - **Phase 4 — Deployment & Testing:** Optimize performance and prepare the multiplayer experience for wider testing.
